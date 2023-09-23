@@ -45,7 +45,7 @@ cd mltzip
 
 Arguments:
 - `-i, --input`: Input file for compression.
-- `-g, --group`: Replacement rule in the format `<replacing character>:<replaced character 1>,<replaced character 2>,...`.
+- `-g, --group`: Replacement rule in the format `<replacing character>:<replaced character 1>,<replaced character 2>,...`. Can be used multiple times.
 - `-c, --compression`: Compression algorithm to use (choices: gzip, bzip2, xz; default: bzip2).
 - `-l, --language`: Language of the text (default: English).
 - `-d, --debug`: Debug mode; retains the .mlt file.
