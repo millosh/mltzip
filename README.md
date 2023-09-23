@@ -12,11 +12,21 @@ Once the text undergoes this transformation, it's further compressed using a tra
 
 For our tests, we used the text "A Tale of Two Cities" by Charles Dickens, sourced from [Project Gutenberg](https://www.gutenberg.org/files/98/98-0.txt). The original file was processed using the `dos2unix` command to standardize line endings, resulting in a file size of 790,943 bytes.
 
-The MLTZIP method demonstrated promising improvements in compression ratios:
+We employed the following character replacement groups for the MLTZIP pre-processing:
+- Vowels: `a:e,i,o,u`
+- `t:h`
+- `s:c`
+- `r:l`
+- `x:q,j,z`
 
-- **bzip2**: Direct compression using bzip2 achieved a file size of 220,386 bytes. When pre-processed with MLTZIP and then compressed using bzip2, the file size was reduced to 211,232 bytes, marking an improvement of approximately 4.15%.  
+With these replacement groups, the MLTZIP method demonstrated promising improvements in compression ratios:
+
+- **bzip2**: Direct compression using bzip2 achieved a file size of 220,386 bytes. When pre-processed with MLTZIP and then compressed using bzip2, the file size was reduced to 211,232 bytes, marking an improvement of approximately 4.15%.
 - **gzip**: Direct compression using gzip yielded a file size of 299,085 bytes. With MLTZIP pre-processing followed by gzip compression, the size was 271,808 bytes, showing an improvement of roughly 9.12%.
 - **xz**: Direct xz compression resulted in a file size of 247,324 bytes. After MLTZIP pre-processing and xz compression, the size came down to 229,236 bytes, an improvement of about 7.31%.
+## Experimental Results
+
+For our tests, we used the text "A Tale of Two Cities" by Charles Dickens, sourced from [Project Gutenberg](https://www.gutenberg.org/files/98/98-0.txt). The original file was processed using the `dos2unix` command to standardize line endings, resulting in a file size of 790,943 bytes.
 
 ## Usage Instructions
 
