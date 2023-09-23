@@ -34,8 +34,8 @@ To use MLTZIP for text compression, follow the steps below:
 
 1. Clone the repository:
 ```
-```git clone <repository_link>
-cd mltzip```
+git clone <repository_link>
+cd mltzip
 ```
 
 2. Run the MLTZIP tool:
