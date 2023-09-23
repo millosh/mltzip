@@ -13,7 +13,7 @@ Once the text undergoes this transformation, it's further compressed using a tra
 For our tests, we used the text "A Tale of Two Cities" by Charles Dickens, sourced from [Project Gutenberg](https://www.gutenberg.org/files/98/98-0.txt). The original file was processed using the `dos2unix` command to standardize line endings, resulting in a file size of 790,943 bytes.
 
 We employed the following character replacement groups for the MLTZIP pre-processing:
-- Vowels: `a:e,i,o,u`
+- `a:e,i,o,u`
 - `t:h`
 - `s:c`
 - `r:l`
