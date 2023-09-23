@@ -8,6 +8,8 @@ The primary concept behind MLTZIP revolves around the transformation of text bef
 
 Once the text undergoes this transformation, it's further compressed using a traditional algorithm. Decompression involves two steps: First, the file is decompressed using the standard tool. Then, a language model or algorithm reverses the character-based transformations to restore the text to its original form (or as close to it as possible).
 
+> ⚠️ **Warning**: MLTZIP reduces the information content of the original text as part of its compression technique. Always retain the original file as the decompressed text might not be a perfect match to the original. Use MLTZIP with caution and awareness of this information loss.
+
 ## Experimental Results
 
 For our tests, we used the text "A Tale of Two Cities" by Charles Dickens, sourced from [Project Gutenberg](https://www.gutenberg.org/files/98/98-0.txt). The original file was processed using the `dos2unix` command to standardize line endings, resulting in a file size of 790,943 bytes.
